@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND | Catalog</title>
+    <link rel="shotrcut icon" href="img/favicon/brand.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5502fe3f34.js" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="app">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top_items">
+                        <div class="header__top_item">
+                            <a href="index.html" class="header__top_logo">
+                                <img src="img/logo.svg" alt="BRAND">
+                            </a>
+                            <filter-el></filter-el>
+                        </div>
+                        <nav class="header__top_item">
+                            <ul class="header__top_menu">
+                                <li class="header__top_list header__top_display-none ">
+                                    <a href="registration.html" class="header__top_link">
+                                        <img src="img/account.svg" alt="account">
+                                    </a>
+                                </li>
+                                <cart ref="cart"></cart>
+                                <li class="header__top_list">
+                                    <div class="header__top_details">
+
+                                        <div class="header__top_link header__top_bars">
+                                            <span class="header__top_burger"></span>
+                                            <!-- <img src="img/burger.svg" alt="menu"> -->
+                                        </div>
+
+                                        <div class="menu__box">
+
+                                            <div class="menu__top">
+                                                <p class="cross close menu-close">&#10006;</p>
+                                                <h3 class="menu__title">Menu</h3>
+                                            </div>
+                                            <div class="menu__items">
+
+                                                <div class="menu__item">
+                                                    <h4 class="menu__subtitle">
+                                                        <a href="catalog.html" class="menu__subtitle_link">Man</a>
+                                                    </h4>
+                                                    <ul class="menu__menu">
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Accessories</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Bags</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Denim</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">T-Shirts</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="menu__item">
+                                                    <h4 class="menu__subtitle">
+                                                        <a href="catalog.html" class="menu__subtitle_link">Woman</a>
+                                                    </h4>
+                                                    <ul class="menu__menu">
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Accessories</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Jackets &
+                                                                Coats</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Polos</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">T-Shirts</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Shirts</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="menu__item">
+                                                    <h4 class="menu__subtitle">
+                                                        <a href="catalog.html" class="menu__subtitle_link">Kids</a>
+                                                    </h4>
+                                                    <ul class="menu__menu">
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Accessories</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Jackets &
+                                                                Coats</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Polos</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">T-Shirts</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Shirts</a>
+                                                        </li>
+                                                        <li class="menu__list">
+                                                            <a href="catalog.html" class="menu__link">Bags</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="menu__item menu__item_display-none">
+                                                    <h4 class="menu__subtitle">
+                                                        <a href="registration.html" class="menu__subtitle_link">Personal
+                                                            Area</a>
+                                                    </h4>
+                                                </div>
+                                                <!-- <div class="menu__item menu__item_display-none">
+                                                    <h4 class="menu__subtitle">
+                                                        <a href="basket.html" class="menu__subtitle_link">Basket</a>
+                                                    </h4>
+                                                </div> -->
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom-all">
+                <div class="container">
+                    <div class="header__bottom-all_items">
+                        <div class="header__bottom-all_item">
+                            <h2 class="header__bottom-all_header color-emphasis font-size_24">New arrivals</h2>
+                        </div>
+                        <nav class="header__bottom-all_item header__bottom-all_margin">
+                            <a href="index.html" class="header__bottom-all_link">Home</a>
+                            <a href="catalog.html" class="header__bottom-all_link">Men</a>
+                            <a href="#" class="header__bottom-all_link color-emphasis">New arrivals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="body">
+            <div class="container">
+
+                <section class="products">
+                    <div class="products__feature">
+                        <div class="products__feature_items">
+                            <div class="products__feature_item">
+                                <details class="products__filter details-close">
+                                    <summary class="products__filter_title">
+                                        <span class="products__title-filter">Filter</span>
+                                        <span class="products__title-burger">&#9868;</span>
+                                    </summary>
+                                    <div class="filter__box filter__box_width">
+                                        <details open class="filter__details">
+                                            <summary class="filter__summary">
+                                                <h4 class="filter__title">Category</h4>
+                                            </summary>
+                                            <ul class="filter__menu">
+                                                <li class="filter__list">Accessories</li>
+                                                <li class="filter__list">Bags</li>
+                                                <li class="filter__list">Denim</li>
+                                                <li class="filter__list">Hoodies & Sweatshirts</li>
+                                                <li class="filter__list">Jackets & Coats</li>
+                                                <li class="filter__list">Polos</li>
+                                                <li class="filter__list">Shirts</li>
+                                                <li class="filter__list">Shoes</li>
+                                                <li class="filter__list">Sweaters & Knits</li>
+                                                <li class="filter__list">T-Shirts</li>
+                                                <li class="filter__list">Tanks</li>
+                                            </ul>
+                                        </details>
+
+                                        <details class="filter__details">
+                                            <summary class="filter__summary">
+                                                <h4 class="filter__title">Brand</h4>
+                                            </summary>
+                                            <ul class="filter__menu">
+                                                <li class="filter__list">Appo</li>
+                                                <li class="filter__list">Burny</li>
+                                                <li class="filter__list">Demix</li>
+                                                <li class="filter__list">Lurk & Swap</li>
+                                                <li class="filter__list">Jammy</li>
+                                            </ul>
+                                        </details>
+
+                                        <details class="filter__details">
+                                            <summary class="filter__summary">
+                                                <h4 class="filter__title">Designer</h4>
+                                            </summary>
+                                        </details>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="products__feature_item products__feature-margin">
+                                <details class="products__charact">
+                                    <summary class="products__charact_title details-close">
+                                        Trending&nbsp;now
+                                    </summary>
+                                </details>
+                                <details class="products__charact details-close">
+                                    <summary class="products__charact_title">
+                                        Size
+                                    </summary>
+                                    <div class="filter__box charact__box">
+                                        <label class="charact__label"><input class="charact__size"
+                                                type="checkbox">xs</label>
+                                        <label class="charact__label"><input class="charact__size"
+                                                type="checkbox">s</label>
+                                        <label class="charact__label"><input class="charact__size"
+                                                type="checkbox">m</label>
+                                        <label class="charact__label"><input class="charact__size"
+                                                type="checkbox">l</label>
+                                    </div>
+                                </details>
+                                <details class="products__charact details-close">
+                                    <summary class="products__charact_title">
+                                        Price
+                                    </summary>
+                                </details>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <error ref="error"></error>
+                    <products ref="products"></products>
+
+                    <div class="products__pages">
+                        <nav class="products__pages_item font-size_16">
+                            <a href="#" class="products__pages_link active-link">1</a>
+                            <a href="#" class="products__pages_link">2</a>
+                            <a href="#" class="products__pages_link">3</a>
+                            <a href="#" class="products__pages_link">4</a>
+                            <a href="#" class="products__pages_link">5</a>
+                            <a href="#" class="products__pages_link">6</a>
+                            <span class="products__pages_link">...</span>
+                            <a href="#" class="products__pages_link">20</a>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+
+            <div class="about">
+                <div class="container">
+                    <div class="about__items">
+                        <article class="about__item">
+                            <img src="img/delivery.svg" alt="delivery" class="about__item_img">
+                            <h3 class="about__item_title font-size_20">Free Delivery</h3>
+                            <p class="about__item_subtitle">Worldwide delivery on all. Authorit tively morph
+                                next-generation
+                                innov tion with extensive models.</p>
+                        </article>
+                        <article class="about__item">
+                            <img src="img/discounts.svg" alt="discounts" class="about__item_img">
+                            <h3 class="about__item_title font-size_20">Sales & discounts</h3>
+                            <p class="about__item_subtitle">Worldwide delivery on all. Authorit tively morph
+                                next-generation
+                                innov tion with extensive models.</p>
+                        </article>
+                        <article class="about__item">
+                            <img src="img/quality.svg" alt="quality" class="about__item_img">
+                            <h3 class="about__item_title font-size_20">Quality assurance</h3>
+                            <p class="about__item_subtitle">Worldwide delivery on all. Authorit tively morph
+                                next-generation
+                                innov tion with extensive models.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="subscription">
+                <div class="subscription__background">
+                    <div class="container">
+                        <div class="subscription__items">
+                            <figure class="subscription__item subscription__figure">
+                                <img src="img/avatar.png" alt="avatar" class="subscription__figure-img">
+                                <blockquote class="subscription__figure_citation font-size_20">
+                                    &laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar
+                                    purus condimentum&raquo;
+                                </blockquote>
+                                <figcaption class="subscription__figure_name">
+                                    <i>Bin Burhan, Dhake, Bd</i>
+                                </figcaption>
+                            </figure>
+                            <div class="subscription__item subscription__subscribe">
+                                <h3 class="subscription__subscribe_title font-size_24">Subscribe</h3>
+                                <p class="subscription__subscribe_subtitle font-size_16">For our newsletter and
+                                    promotion</p>
+                                <form action="#" class="subscription__subscribe_form">
+                                    <input type="email" class="subscription__subscribe_input input-text"
+                                        placeholder="Enter Your Email">
+                                    <button class="subscription__subscribe_button button">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="container">
+                    <div class="copy__items font-size_16">
+                        <div class="copy__item">
+                            <p class="copy__item_copyright">&copy; 2021 Copyright by <a
+                                    href="https://styshkaclover.com/" class="copyright-link"
+                                    target="_blank">styshkaclover</a></p>
+                        </div>
+                        <div class="copy__item">
+                            <div class="copy__item_socialnetwork">
+                                <a href="#" class="copy__item_link"><i class="copy_fab fab fa-facebook-f"></i></a>
+                                <a href="#" class="copy__item_link"><i class="copy_fab fab fa-instagram"></i></a>
+                                <a href="#" class="copy__item_link"><i class="copy_fab fab fa-pinterest-p"></i></a>
+                                <a href="#" class="copy__item_link"><i class="copy_fab fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

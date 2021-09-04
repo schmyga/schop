@@ -1,0 +1,108 @@
+
+.footer
+
+    &__margin-top
+        margin-top: 96px
+
+.subscription
+    background: linear-gradient(180deg, rgb(242, 242, 242) 56%, rgb(234, 234, 234), rgb(231, 231, 231))
+
+    &__background
+        background-image: url(../img/background__footer.png)
+        background-repeat: no-repeat
+        background-position: left
+        background-size: cover
+
+    &__items
+        display: flex
+        justify-content: space-between
+        padding: 96px 0
+
+    &__item
+        text-align: center
+        align-self: center
+
+    &__figure
+        max-width: 360px
+
+        &_name
+            margin-top: 5px
+
+        &_citation
+            margin-top: 25px
+
+    &__subscribe
+        max-width: 400px
+
+        &_title
+            text-transform: uppercase
+
+        &_subtitle
+            text-transform: uppercase
+            margin-top: 8px
+
+        &_form
+            display: flex
+            justify-content: center
+            margin-top: 30px
+
+        &_input
+            border-top-left-radius: 20px
+            border-bottom-left-radius: 20px
+            background-color: $color-light-gray-sec
+            border-color: transparent
+            flex: 1
+
+        &_button
+            padding: 12px 8px
+            text-transform: none
+            border-top-right-radius: 20px
+            border-bottom-right-radius: 20px
+            background-color: $color-emphasis
+            color: $color-light
+
+            &:hover
+                opacity: 0.9
+
+.copy
+    background: $color-dark
+    padding: 24px 0
+
+    &__items
+        display: flex
+        justify-content: space-between
+        color: $color-light
+        align-items: center
+
+    &__item
+        display: flex
+
+        & a + a
+            margin-left: 4px
+
+        &_copyright
+            position: relative
+
+            &::after
+                content: url('../img/clover.png')
+                position: absolute
+                padding-left: 2px
+                top: -1px
+
+        &_link
+            color: $color-light
+
+            &:hover .copy_fab
+                color: #FFFFFF
+                background: $color-emphasis
+
+    &_fab
+        color: $color-dark
+        background: $color-light
+        width: 31px
+        padding: 9px 0px
+        text-align: center
+        transition: color, background 0.3s
+
+.copyright-link
+    color: $color-light

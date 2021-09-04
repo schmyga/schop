@@ -1,0 +1,771 @@
+// css reset
+
+@import "vars"
+
+*
+    margin: 0
+    padding: 0
+    border: 0
+
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+*:focus,
+*:active
+    outline: none
+
+html,
+body
+    height: 100%
+    width: 100%
+    font-size: 100%
+    font-size: 14px
+    line-height: 18px
+
+body
+    font-family: sans-serif
+    font-weight: 400
+
+h1, h2, h3, h4, h5, h6
+    font-size: inherit
+    font-weight: bold
+
+ul, ol
+    list-style: none
+    padding: 0
+
+a
+    color: $color-dark
+
+a,
+a:visited
+    text-decoration: none
+
+a:hover
+    text-decoration: none
+
+a:focus,
+a:active
+    outline: none
+
+button,
+input,
+optgroup,
+select,
+textarea
+    font-family: inherit
+    font-size: 100%
+    margin: 0
+
+button,
+input
+    overflow: visible
+
+input::ms-clear
+    display: none
+
+summary,
+button
+    cursor: pointer
+
+button::-moz-focus-inner
+    border: 0
+    padding: 0
+
+input:focus
+    outline: none
+
+summary,
+details
+    display: block
+
+details > summary
+    list-style: none
+
+details > summary::-webkit-details-marker
+    display: none
+
+// for all pages
+
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+.body
+    flex-grow: 1
+    scroll-behavior: smooth
+    line-height: 1
+
+.container
+    max-width: $width-site
+    margin: 0 auto
+    padding: 0 2%
+
+.content
+    padding: 3% 2% 0
+
+.color-emphasis
+    color: $color-emphasis
+
+.font-size
+    &_16
+        font-size: 16px
+        line-height: 20px
+    &_20
+        font-size: 20px
+        line-height: 24px
+    &_24
+        font-size: 24px
+        line-height: 28px
+
+.button
+    font-size: 16px
+    line-height: 19px
+    padding: 12px 25px
+    border: 1px solid $color-emphasis
+    background-color: transparent
+    color: $color-emphasis
+    text-transform: uppercase
+    transition: background-color 0.5s, color 0.5s, border 0.5s
+    display: inline-block
+
+    &:hover
+        background-color: $color-emphasis
+        color: $color-light
+
+.input-text
+    font-size: 13px
+    line-height: 16px
+    padding: 12px 22px
+    color: $color-dark
+    border: 1px solid $color-secondary
+    background-color: $color-white
+
+    &:focus
+        box-shadow: $box-shw-input
+
+.cross
+    text-align: right
+    padding: 6px 10px
+    cursor: pointer
+    transition: color 0.3s
+
+    &:hover
+        color: $color-emphasis
+// header
+
+@import "header"
+
+// body
+
+// body - only index.html
+
+.body
+
+.catalog
+    margin-top: 65px
+
+    &__items
+        display: flex
+        justify-content: space-between
+
+    &__link
+        display: block
+        flex: 1
+        margin: 1%
+        text-align: center
+
+    &-small
+        height: 260px
+
+    &-big
+        height: 180px
+
+    &__item
+        display: flex
+        height: 100%
+        align-items: center
+        justify-content: center
+        transition: all 0.3s
+
+        &_subtitle
+            color: $color-light
+
+        &_title
+
+    &__women
+        background: url(../img/for_women.jpg) no-repeat center
+        background-size: cover
+
+    &__men
+        background: url(../img/for_men.jpg) no-repeat center
+        background-size: cover
+
+    &__kids
+        background: url(../img/for_kids.jpg) no-repeat center
+        background-size: cover
+
+    &__accessories
+        background: url(../img/accessories.jpg) no-repeat center
+        background-size: cover
+
+.products
+    margin-top: 96px
+
+    &__block
+        text-align: center
+
+    &__title
+        font-size: 30px
+        line-height: 36px
+
+    &__subtitle
+        color: $color-light-gray
+        margin-top: 6px
+
+    &__items
+        display: flex
+        flex-wrap: wrap
+        margin-top: 48px
+
+        &_margin
+            margin-top: 115px
+
+    &__item
+        max-width: 360px
+        width: 31%
+        margin: 2% 1%
+        position: relative
+        transition: all 0.5s
+        background: $color-light-sec
+
+        &:hover
+            box-shadow: $box-shw
+
+        &:hover .product__img
+            filter: brightness(36%)
+
+        &:hover .product__add
+            display: flex
+
+        &_link
+            display: block
+            height: 100%
+
+    &__button
+        margin-top: 48px
+        text-align: center
+
+        &_link
+
+.product
+    &__img
+        width: 100%
+        transition: all 0.5s
+
+    &__block
+        padding: 24px 18px
+
+    &__title
+        text-transform: uppercase
+
+    &__subtitle
+        margin-top: 12px
+        color: $color-secondary
+
+    &__price
+        margin-top: 18px
+
+    &__add
+        position: absolute
+        z-index: 1
+        top: 32%
+        display: none
+        width: 100%
+        justify-content: center
+
+        &_link
+            padding: 14px 16px 12px 50px
+            background-color: transparent
+            color: $color-light
+            border: 1px solid $color-light
+            position: relative
+            transition: all 0.5s
+
+            &:hover
+                box-shadow: 6px 4px 35px rgba(255, 255, 255, 0.418)
+            &:before
+                content: url("../img/basket.svg")
+                position: absolute
+                left: 11px
+                top: 7px
+
+.about
+    margin-top: 96px
+    background: $color-dark
+
+    &__items
+        padding: 104px 0
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 2%
+        justify-content: space-between
+        justify-items: center
+        align-items: baseline
+
+    &__item
+        text-align: center
+        color: $color-light
+        margin: 0 1.5%
+        max-width: 360px
+
+        &_img
+
+        &_title
+            margin-top: 20px
+
+        &_subtitle
+            margin-top: 16px
+
+// body - catalog
+
+.products
+
+    &__feature
+
+        &_items
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+        &_item
+            display: flex
+            justify-content: center
+
+            & .products__charact + .products__charact
+                margin-left: 48px
+
+        &-margin
+            margin-right: 30px
+
+    &__filter
+
+    &__filter_title
+        position: relative
+        color: $color-emphasis
+        text-transform: uppercase
+        font-weight: bold
+        display: flex
+        justify-content: space-between
+
+    &__title-burger
+        padding-left: 10px
+
+    &__charact
+        &_title
+            position: relative
+            text-transform: uppercase
+
+            &:after
+                content: "\2228"
+                position: absolute
+                right: -20px
+                bottom: 1px
+
+    &__pages
+        margin-top: 64px
+        display: flex
+        justify-content: center
+
+        &_item
+            display: flex
+            justify-content: space-between
+            padding: 8px 25px
+            max-width: 283px
+            border: 1px solid $color-light-gray-sec
+            position: relative
+
+            &:before
+                content: "<"
+                position: absolute
+                left: 10px
+                top: 11px
+
+            &:after
+                content: ">"
+                position: absolute
+                right: 10px
+                top: 11px
+
+        &_link
+            opacity: 0.3
+            transition: all 0.3s
+            padding: 3px 8px
+
+            &:hover
+                opacity: 0.8
+
+.active-link
+    opacity: 1
+    color: $color-emphasis
+    font-weight: 500
+
+// body - filter-box
+
+.products
+    &__feature_item
+        position: relative
+
+.filter
+
+    &__box
+        position: absolute
+        z-index: 1
+        box-shadow: $box-shw
+        background: $color-light
+        padding: 13px 16px
+        min-width: 500%
+
+    &__details
+        display: flex
+        flex-direction: column
+
+    &__title
+        margin-top: 18px
+        padding: 12px 11px
+        text-transform: uppercase
+        border-left: 5px solid $color-emphasis
+        border-bottom: 1px solid $color-light-gray-sec
+
+    &__menu
+        display: flex
+        flex-direction: column
+
+    &__list
+        color: $color-light-gray
+        margin-top: 11px
+        margin-left: 17px
+        cursor: pointer
+
+        &:hover
+            color: $color-emphasis
+
+// body - charact-box
+
+.charact
+
+    &__box
+        display: flex
+        flex-direction: column
+        min-width: 25%
+
+    &__label
+        text-transform: uppercase
+        margin-top: 5px
+        cursor: pointer
+
+    &__size
+        margin-right: 10px
+
+// body - product
+
+.slider
+    background-color: #F7F7F7
+    border: 1px solid $color-light-gray-sec
+
+    &__slider
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        &_icon
+            color: $color-secondary
+            padding: 15px 16px
+            font-size: 26px
+            cursor: pointer
+            transition: all 0.3s
+
+            &:hover
+                color: $color-emphasis
+
+    &__img
+        width: 100%
+
+    &__box
+        display: flex
+        justify-content: center
+        text-align: center
+        background-color: $color-white
+        border: 1px solid $color-light-gray-sec
+        z-index: 1
+        // margin-top: -64px
+
+    &__inner
+        padding: 64px 0
+        max-width: 555px
+
+    &__block
+        display: flex
+        flex-direction: column
+        border-bottom: 1px solid $color-light-gray-sec
+        padding: 0 10px 64px
+
+    &__subtitle
+        color: $color-emphasis
+        text-transform: uppercase
+
+    &__line
+        width: 63px
+        height: 3px
+        background: $color-emphasis
+        align-self: center
+        margin-top: 12px
+
+    &__title
+        text-transform: uppercase
+        font-size: 18px
+        margin-top: 12px
+
+    &__text
+        color: $color-secondary
+        margin-top: 48px
+
+    &__price
+        color: $color-emphasis
+        margin-top: 32px
+
+    &__charact
+        margin-top: 64px
+
+    &__button
+        margin-top: 48px
+
+        &_link
+            padding: 15px 40px 14px 65px
+            position: relative
+            transition: all 0.5s
+
+            &:before
+                content: url("../img/basket_rose.png")
+                position: absolute
+                left: 25px
+                top: 10px
+                transition: all 0.5s
+
+            &:hover::before
+                content: url("../img/basket_white.png")
+                position: absolute
+
+// body - registration
+
+.reg
+    margin-top: 64px
+
+    &__items
+        display: grid
+        justify-content: space-between
+        grid-template-columns: 30% 60%
+        grid-gap: 5%
+
+    &__item
+        display: flex
+        flex-direction: column
+
+    &__form
+        display: flex
+        flex-direction: column
+
+        &_input
+            padding: 14px 22px
+            background: $color-white
+            margin-top: 20px
+            flex: 1
+
+        &_gender
+            display: flex
+            margin-top: 31px
+            margin-bottom: 33px
+
+            & label + label
+                margin-left: 15px
+        &_label
+            cursor: pointer
+
+        &_radio
+            margin-right: 10px
+            cursor: pointer
+
+        &_text
+            font-size: 13px
+            line-height: 15px
+            color: $color-light-gray
+            margin-top: 15px
+
+        &_button
+            color: $color-light
+            background: $color-emphasis
+            margin-top: 17px
+            text-transform: uppercase
+            transition: opacity 0.5s
+
+            &::after
+                content: "\2192"
+                color: $color-light
+                font-size: 20px
+                padding-left: 20px
+
+            &:hover
+                opacity: 0.9
+    &__block
+
+        &_title
+            text-transform: uppercase
+
+        &_text
+            margin-top: 22px
+
+    &__lists
+        margin-top: 21px
+
+    &__list
+        margin-top: 16px
+
+        &::before
+            content: "\2714"
+            padding-right: 23px
+
+// body - basket
+
+.basket
+    margin-top: 96px
+
+    &__items
+        display: grid
+        justify-content: space-between
+        grid-template-columns: 55% 35%
+        grid-gap: 5%
+
+    &__cards
+
+        & .basket__card + .basket__card
+            margin-top: 40px
+
+    &__card
+        background-color: $color-white
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+
+    &__figure
+        display: flex
+
+    &__link
+        display: block
+        max-width: 250px
+
+    &__img
+        width: 100%
+        display: block
+        height: 100%
+        object-fit: cover
+
+    &__block
+        padding: 22px 32px
+        flex: 1
+        min-width: 320px
+
+        &_top
+            display: flex
+            justify-content: space-between
+
+        &_title
+            text-transform: uppercase
+
+        &_bottom
+            margin-top: 42px
+
+            & .basket__block_charact + .basket__block_charact
+                margin-top: 6px
+
+    &__buttons
+        display: flex
+        justify-content: space-between
+        margin-top: 73px
+
+    &__button
+
+        &_link
+            border: 1px solid $color-light-gray
+            color: $color-secondary
+            font-size: 14px
+            line-height: 18px
+
+            &:hover
+                border-color: transparent
+
+        &_form
+            font-size: 11px
+            line-height: 13px
+            padding: 10px 15px
+            margin-top: 23px
+
+    &__form
+        display: flex
+        flex-direction: column
+        &_title
+            text-transform: uppercase
+
+    &__input
+        margin-top: 21px
+        flex: 1
+
+    &__button
+        &_form
+            font-size: 11px
+            line-height: 13px
+            padding: 10px 15px
+            margin-top: 23px
+
+    &__total
+        display: flex
+        flex-direction: column
+        margin-top: 58px
+        padding: 39px 42px 42px
+        background-color: $color-light-sec
+
+        &_subtitle
+            align-self: flex-end
+
+            &:after
+                content: "$600"
+                padding-left: 22px
+
+        &_title
+            margin-top: 12px
+            align-self: flex-end
+
+            &:after
+                content: "$600"
+                padding-left: 22px
+                color: $color-emphasis
+    &__line
+        height: 1px
+        background: $color-light-gray-sec
+        margin-top: 21px
+
+    &__button
+        &_checkout
+            margin-top: 17px
+            color: $color-light
+            background: $color-emphasis
+            transition: opacity 0.5s
+
+            &:hover
+                opacity: 0.9
+
+// footer
+
+@import "footer"
+
+@import "media"

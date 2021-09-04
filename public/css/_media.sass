@@ -1,0 +1,468 @@
+@media screen and (max-width: 1034px)
+    .header
+        &__basket
+            max-height: 90%
+    .basket
+        margin-top: 64px
+        &__cards
+            & .basket__card + .basket__card
+                margin-top: 32px
+        &__block
+            min-width: 275px
+            &_title
+                font-size: 20px
+                line-height: 24px
+            &_bottom
+                margin-top: 32px
+
+            &_charact
+                font-size: 16px
+                line-height: 20px
+
+@media screen and (max-width: 888px)
+    .basket
+        &__items
+            grid-template-columns: 70%
+            justify-content: center
+        &__block
+            &_bottom
+                margin-top: 32px
+        &__buttons
+            margin-top: 62px
+
+@media screen and (max-width: 830px)
+    .close
+        display: none
+    // body
+    .catalog
+        margin-top: 20px
+        &__item
+            &_subtitle
+                font-size: 16px
+                line-height: 20px
+            &_title
+                font-size: 20px
+                line-height: 24px
+
+        &-small
+            height: 168px
+
+        &-big
+            height: 116px
+    .slider
+        &__box
+            border-left-color: transparent
+            border-right-color: transparent
+    .reg
+        margin-top: 40px
+
+        &__items
+            grid-template-columns: 1fr 1fr
+
+@media screen and (max-width: 900px) and (min-width: 769px), screen and (max-width: 586px) and (min-width: 418px), screen and (max-width: 330px)
+    // body
+    .product
+        &__block
+            font-size: 13px
+            padding: 18px 14px
+            &__subtitle
+                margin-top: 10px
+
+            &__price
+                margin-top: 12px
+
+@media screen and (max-width: 768px)
+    // header
+    .header
+        &__top
+            &_form
+                display: none
+
+        &__bottom
+
+            &_block
+                &:before
+                    height: 81px
+
+            &_title
+                font-size: 44px
+                line-height: 52px
+
+            &_subtitle
+                font-size: 24px
+                line-height: 28px
+    .menu
+        &__box
+            padding: 30px 40px 40px
+        &__title
+            font-size: 18px
+            line-height: 24px
+
+        &__subtitle
+            font-size: 16px
+            line-height: 22px
+
+        &__link
+            font-size: 16px
+            line-height: 22px
+
+    // body
+    .products
+        &__item
+            width: 48%
+            &_display-none
+                display: none
+    .about
+        &__items
+            padding: 48px 0 128px
+            grid-template-columns: repeat(1, 1fr)
+
+        &__item
+            margin-top: 40px
+
+            &_title
+                margin-top: 27px
+    .reg
+        &__items
+            grid-template-columns: 70%
+            justify-content: center
+
+        &__item
+            margin-top: 10px
+
+    .basket
+        &__items
+            grid-template-columns: 90%
+        &__block
+            padding: 20px 30px
+
+            &_title
+                font-size: 18px
+                line-height: 22px
+
+            &_bottom
+                margin-top: 38px
+    // footer
+    .subscription
+        &__items
+            flex-direction: column
+            padding: 64px 0 90px
+
+        &__subscribe
+            margin-top: 64px
+
+@media screen and (max-width: 586px), screen and (max-height: 586px)
+    .header
+        &__top
+            &_item
+                margin-right: 14px
+
+        &__bottom
+            margin-top: 78px
+
+            &_block
+                &:before
+                    height: 70px
+                    width: 10px
+                    left: -20px
+
+            &_title
+                font-size: 38px
+                line-height: 46px
+
+            &_subtitle
+                font-size: 20px
+                line-height: 24px
+    .menu
+        &__box
+            width: 100vw
+            padding: 35px 70px 96px
+            text-align: center
+    .menu
+        &__title
+            font-size: 20px
+            line-height: 26px
+
+        &__subtitle
+            margin: 35px 0 10px
+            font-size: 18px
+            line-height: 24px
+
+        &__link
+            font-size: 18px
+            line-height: 24px
+        &__list
+            margin-left: 0
+
+    // ._height-100vh
+    //     height: 100vh
+    //     overflow: auto
+    .basket
+        &__block
+            &_bottom
+                margin-top: 22px
+
+                & .basket__block_charact + .basket__block_charact
+                    margin-top: 3px
+        &__buttons
+            margin-top: 32px
+        &__total
+            margin-top: 48px
+    .delete
+        font-size: 12px
+
+@media screen and (max-width: 510px)
+    // header
+    .header
+        &__bottom
+
+            &_block
+                &:before
+                    height: 71px
+                    width: 9px
+                    left: -15px
+
+            &_title
+                font-size: 32px
+                line-height: 38px
+
+            &_subtitle
+                font-size: 15px
+                line-height: 20px
+
+    // header - everyone but index.html
+    .header__bottom-all
+
+        &_items
+            padding: 30px 0 46px
+            flex-direction: column
+
+        &_margin
+            margin-top: 22px
+    // body
+    .catalog
+
+        &__item
+            &_subtitle
+                font-size: 14px
+                line-height: 18px
+            &_title
+                font-size: 18px
+                line-height: 22px
+    .products
+        margin-top: 64px
+
+        &__title-filter
+            display: none
+
+        &__title-burger
+            font-size: 25px
+    .reg
+        &__items
+            grid-template-columns: 90%
+    .filter
+        &__box
+            &_width
+                width: 70vw
+    .basket
+        margin-top: 32px
+        &__cards
+            & .basket__card + .basket__card
+                margin-top: 22px
+        &__block
+            min-width: 50%
+            padding: 15px 20px
+            &_title
+                font-size: 14px
+                line-height: 18px
+
+            &_bottom
+                margin-top: 12px
+
+            &_charact
+                font-size: 12px
+                line-height: 16px
+
+        &__button
+            &_link
+                font-size: 12px
+                line-height: 16px
+                padding: 8px 16px
+            &_checkout
+                font-size: 14px
+                line-height: 18px
+                padding: 10px 20px
+
+    // footer
+    .copy
+        padding: 44px 0 24px
+
+        &__items
+            flex-direction: column-reverse
+
+        &__item
+
+            &_copyright
+                margin-top: 40px
+
+@media screen and (max-width: 418px)
+    // header
+    .header
+        &__top
+            &_display-none
+                display: none
+        &__basket
+            width: 100vw
+            padding: 30px 30px 132px
+            height: 100vh
+
+            &_product
+                padding: 15px 0
+        &__bottom
+            margin-top: 78px
+            &-background
+                background: none
+
+            &_block
+                padding: 28% 0 34%
+                margin-left: 10%
+
+                &:before
+                    height: 70px
+                    width: 10px
+                    left: -20px
+
+            &_title
+                font-size: 38px
+                line-height: 46px
+
+            &_subtitle
+                font-size: 20px
+                line-height: 24px
+    .menu
+        &__box
+        &__item
+            &_display-none
+                display: block
+    // body
+    .catalog
+        margin-top: 64px
+
+        &__item
+            &_subtitle
+                font-size: 18px
+                line-height: 22px
+            &_title
+                font-size: 22px
+                line-height: 26px
+
+        &__items
+            flex-direction: column
+
+        &__link
+            flex: none
+            margin: 2.5% 1.5%
+
+        &-small
+            height: 247px
+
+        &-big
+            height: 111px
+    .products
+        margin-top: 64px
+
+        &__items
+            justify-content: center
+
+        &__item
+            width: 98%
+            margin-top: 64px
+            margin: 2%
+
+        &__feature
+            &_item
+
+            & .products__charact + .products__charact
+                margin-left: 38px
+
+        &__title-burger
+            font-size: 23px
+
+        &__charact
+            &_title
+                font-size: 12px
+                line-height: 14px
+    .reg
+        &__item
+            margin-top: 20px
+
+        &__block
+            font-size: 20px
+            line-height: 24px
+
+        &__list
+            font-size: 20px
+            line-height: 24px
+
+    .slider
+        &__slider
+            margin-right: 32px
+            &_icon
+                font-size: 22px
+        &__charact
+            margin-right: 10px
+            & .products__charact + .products__charact
+                margin-left: 28px
+
+        &__block
+            padding: 0 10px 32px
+
+        &__subtitle
+            font-size: 14px
+            line-height: 18px
+
+        &__title
+            font-size: 16px
+            line-height: 20px
+
+        &__text
+            font-size: 12px
+            line-height: 16px
+
+        &__button
+            &_link
+                padding: 13px 38px 12px 63px
+                font-size: 14px
+                line-height: 18px
+    .filter
+        &__box
+            &_width
+                width: 100vw
+    .basket
+        &__block
+
+            &_title
+                font-size: 12px
+                line-height: 16px
+
+            &_bottom
+                margin-top: 12px
+
+            &_charact
+                font-size: 10px
+                line-height: 14px
+
+            &_bottom
+                margin-top: 9px
+
+                & .basket__block_charact + .basket__block_charact
+                    margin-top: 1px
+        &__button
+            &_link
+                font-size: 10px
+                line-height: 14px
+                padding: 6px 10px
+            &_checkout
+                font-size: 12px
+                line-height: 16px
+                padding: 8px 18px

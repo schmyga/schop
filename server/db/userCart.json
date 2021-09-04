@@ -1,0 +1,24 @@
+{
+    "amount": 0,
+    "countGoods": 0,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 112,
+            "product_name": "Shirt",
+            "img_product": "img/image_men-2.png",
+            "price": 459,
+            "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+            "product_category": "man"
+        },
+        {
+            "quantity": 1,
+            "id_product": 215,
+            "product_name": "Blazer",
+            "img_product": "img/image_women-5.png",
+            "price": 399,
+            "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+            "product_category": "woman"
+        }
+    ]
+}

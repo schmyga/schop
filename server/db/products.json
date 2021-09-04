@@ -1,0 +1,98 @@
+[
+  {
+    "id_product": 111,
+    "product_name": "Jacket",
+    "img_product": "img/image_men-1.png",
+    "price": 559,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 112,
+    "product_name": "Shirt",
+    "img_product": "img/image_men-2.png",
+    "price": 459,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 113,
+    "product_name": "Hoody",
+    "img_product": "img/image_men-3.png",
+    "price": 499,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 114,
+    "product_name": "Pants",
+    "img_product": "img/image_men-4.png",
+    "price": 699,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 115,
+    "product_name": "Longsleeve",
+    "img_product": "img/image_men-5.png",
+    "price": 399,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 116,
+    "product_name": "T-shirt",
+    "img_product": "img/image_men-6.png",
+    "price": 259,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 117,
+    "product_name": "Shirt",
+    "img_product": "img/image_men-7.png",
+    "price": 459,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 118,
+    "product_name": "Leather Jacket",
+    "img_product": "img/image_men-8.png",
+    "price": 1299,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 119,
+    "product_name": "Shirt",
+    "img_product": "img/image_men-9.png",
+    "price": 299,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "man"
+  },
+  {
+    "id_product": 212,
+    "product_name": "Blazer",
+    "img_product": "img/image_women-2.png",
+    "price": 459,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "woman"
+  },
+  {
+    "id_product": 215,
+    "product_name": "Blazer",
+    "img_product": "img/image_women-5.png",
+    "price": 399,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "woman"
+  },
+  {
+    "id_product": 216,
+    "product_name": "Shirt",
+    "img_product": "img/image_women-6.png",
+    "price": 359,
+    "product_text": "Known for her sculptural takes on traditional tailring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_category": "woman"
+  }
+]
